@@ -7,7 +7,7 @@ let downloadingBar;
 
 Ytdl.getInfo(Config.videoId).then((info) => {
     console.log(`Downloading ${info.videoDetails.title}...`);
-    Ytdl("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    Ytdl("https://www.youtube.com/watch?v=" + Config.videoId, { quality: "highest" })
         .on("response", (res) => downloadingBar = new ProgressBar(`${info.videoDetails.title} ${Config.outputFile} :percent [:bar] :etas`, {
             complete: String.fromCharCode(0x2588),
             total: parseInt(res.headers["content-length"], 10)
