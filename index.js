@@ -6,7 +6,7 @@ const Config = require("./config.json");
 const output = Config.output.toLowerCase();
 if (output !== "mp3" && output !== "mp4") {
     console.log("Output must be mp3 or mp4 !");
-    return;
+    process.exit(1);
 }
 
 let downloadingBar;

@@ -8,6 +8,6 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "progress": "^2.0.3",
-    "ytdl-core": "^4.10.0"
+    "ytdl-core": "^4.11.0"
   }
 }
